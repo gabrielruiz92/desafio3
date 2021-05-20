@@ -1,0 +1,259 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins";
+  background-image: url(./img/puntitos.svg);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+}
+
+.logo,
+.hamburguer {
+  width: 54px;
+  height: 50px;
+}
+
+@media (min-width: 769px) {
+  .hamburguer {
+    display: none;
+  }
+}
+
+@media (max-width: 769px) {
+  .menu {
+    display: none;
+  }
+}
+
+.img-perfil {
+  width: 350px;
+  height: 350px;
+}
+
+.section-uno {
+  padding-top: 35px;
+  color: rgb(46, 46, 46);
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (min-width: 769px) {
+  .section-uno {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .img-perfil {
+    margin-left: auto;
+  }
+
+  .bienvenidos {
+    padding: 25px;
+  }
+}
+
+.section-dos {
+  background-color: rgb(46, 46, 46);
+  color: white;
+}
+
+.contenedor-section-dos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(46, 46, 46);
+  color: white;
+}
+.titulo-section-dos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contenedor-parrafo {
+  font-size: 16px;
+  padding: 25px;
+  margin: 25px 50px;
+}
+
+.check {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 65px;
+}
+
+@media (min-width: 769px) {
+  .contenedor-section-dos {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(46, 46, 46);
+    color: white;
+    padding: 25px;
+  }
+  .contenedor-texto {
+    width: 500px;
+    height: 450px;
+  }
+  .contenedor-parrafo {
+    font-size: 16px;
+    padding: 25px;
+    margin: 0px 50px;
+  }
+  .titulo-section-dos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 215px;
+    margin-bottom: 0px;
+  }
+
+  .check {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 65px;
+  }
+}
+
+.section-tres {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: rgb(46, 46, 46);
+  background-color: white;
+}
+
+.hago-cosas {
+  margin: 25px;
+}
+.contenedor-hago-cosas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+@media (min-width: 769px) {
+  .contenedor-hago-cosas {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 50px;
+  }
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(46, 46, 46);
+  color: white;
+}
+
+.contenedor-form {
+  background-color: rgb(46, 46, 46);
+  padding: 0 38px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.label {
+  font-size: 18px;
+  display: block;
+  color: white;
+}
+
+.input-text,
+.textarea {
+  font-family: "Roboto";
+  background-color: rgb(255, 255, 255);
+  border: none;
+  font-size: 24px;
+  width: 100%;
+  border-radius: 0;
+  padding: 10px;
+}
+
+.textarea {
+  min-height: 200px;
+}
+
+.button {
+  margin-top: 50px;
+  font-family: "Roboto";
+  width: 100%;
+  background-color: #ffd953;
+  min-height: 40px;
+  border: none;
+}
+
+@media (min-width: 769px) {
+  .formulario {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    background-color: rgb(46, 46, 46);
+    color: white;
+    justify-content: center;
+  }
+  .contenedor-titulo-form {
+    font-size: 20px;
+  }
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  background-color: #dbdbdb;
+  min-height: 350px;
+}
+
+.grupo-uno {
+  padding: 10px;
+  margin: 25px 5px;
+}
+
+.logo-footer {
+  width: 70px;
+  height: 65px;
+}
+
+.text-footer {
+  font-size: 13px;
+  margin: 0;
+}
+
+.grupo-dos {
+  padding: 10px;
+  margin-top: 55px;
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 769px) {
+  .footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: transparent;
+  }
+
+  .grupo-dos {
+    margin-top: 25px;
+  }
+}
+
+a {
+  margin-bottom: 15px;
+  margin-right: 10px;
+  text-decoration: none;
+  color: rgb(46, 46, 46);
+}
